@@ -8,7 +8,7 @@
 my_food = {"apple":3, "banana":2, "orange":7}
 
 # this prints the number of apples.
-print(my_food["apple])
+print(my_food["apple"])
 
 # this prints all the fruits in our dictionary.
 for food in my_food:
