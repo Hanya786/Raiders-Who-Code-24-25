@@ -1,5 +1,5 @@
 """
-take an order from the customer and return the price .
+take an order from the customer (user input)  and return the price .
 """
 
 class Restaurant
