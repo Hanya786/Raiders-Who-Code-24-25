@@ -1,5 +1,5 @@
 """
-take inputs from the user and use them for something in your program.
+take an order from the customer and return the price .
 """
 
 class Restaurant
@@ -8,13 +8,10 @@ class Restaurant
     self.menu = ["Water", "Pop", "Crackers", "Burger", "Steak","Pizza", "Rigatoni"]
     #prices correspond to food items in order
   def order(self):
-    food = input("Welcome to our restaurant! What would you like to eat today?")
-    count = 0
-    for item in self.menu
-      if food == item:
-        price = self.prices[count]
-      count +=1
-    return "Your price is $" + price + " ! Have a great day."
+    pass
+    #take an input ( recall the input() function!)
+    #return a string with their price - eg "your price is $___!
+
 
 
 
