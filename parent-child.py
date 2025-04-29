@@ -20,26 +20,27 @@ class Animal():
 # take note of the way this is written --> Dog(Animal)
 class Dog(Animal):
 
-  def __init__(self, name, age, species, breed):
-    super().__init__(name, age, species)
+  def __init__(self, name, age, breed):
+    super().__init__(name, age, "dog")
     self.breed = breed
 
   def explain_breed(self):
     print(f"This dog is a {self.breed}.")
 
-  '''
-  notice that the Dog object inherits the properties and methods from the Animal class? this is known as Python Inheritance.
 
-  if our Dog class did not have an __init__ function, it would inherit the properties and methods from the Animal class and would not have a breed property or an explain_breed method.
-  if the Dog class had an __init__ function and the __init__ function did not contain super(), it would NOT inherit the properties of the Animal class (the __init__ function overwrites them).
+'''
+notice that the Dog object inherits the properties and methods from the Animal class? this is known as Python Inheritance.
 
-  write a parent class and a child class of anything you like (but make it make sense). write it in 3 ways:
-  1. the child class inherits ALL properties and methods from the parent.
-  2. the child class inherits SOME properties from the parent.
-  3. the child class inherits NO properties from the parent.
-  4. the child class inherits properties from the parent AND has its own properties and methods.
-  5. create another parent class. have the child class inherit properties from both classes.
-  '''
+if our Dog class did not have an __init__ function, it would inherit the properties and methods from the Animal class and would not have a breed property or an explain_breed method.
+if the Dog class had an __init__ function and the __init__ function did not contain super(), it would NOT inherit the properties of the Animal class (the __init__ function overwrites them).
+
+write a parent class and a child class of anything you like (but make it make sense). write it in 3 ways:
+1. the child class inherits ALL properties and methods from the parent.
+2. the child class inherits SOME properties from the parent.
+3. the child class inherits NO properties from the parent.
+4. the child class inherits properties from the parent AND has its own properties and methods.
+5. create another parent class. have the child class inherit properties from both classes.
+'''
 
 class YourClass():
   pass
