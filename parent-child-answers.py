@@ -27,4 +27,13 @@ class LParent():
 class Child1(FParent):
   pass
 
+# 2
+class Child2(FParent):
+  def __init__(self, number):
+    super().__init__(None, number)
+
+# 3
+class Child3(FParent):
+  def __init__(self):
+    pass
 
